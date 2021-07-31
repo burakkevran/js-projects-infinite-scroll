@@ -5,16 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Infinite Scroll</title>
     <!-- Add icon to the web page -->
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com">
-    <!-- Add premade css styles from font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Add Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- End Add Google Font -->
     <link rel="stylesheet" href="./style.css">
 
     
 </head>
 <body>
+    <!-- Page Title -->
+    <div class="page-title">Unsplash API => Infinite Scroll</div>
+    <!-- Loader -->
+    <div class="loader" id="loader" hidden>
+        <img src="loader.svg" alt="Loader">
+    </div>
+    <!-- Image Container -->
+    <div class="image-container" id="image-container"></div>
     <!-- Script -->
     <script src="./script.js"></script>
 
