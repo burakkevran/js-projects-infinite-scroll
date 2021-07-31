@@ -3,7 +3,7 @@ const loader = document.getElementById('loader');
 let photosArray = [];
 //Unsplash API
 const photoCount = 10;
-const apiKey ='hO7L999mvdfFFx7PWfwxaRHgEmTS5JPsG65N70_unzM';
+const apiKey ='ENTER_YOUR_KEY_HERE';
 const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${photoCount}`;
 let canFetchMorePhotos = false;
 let imagesLoaded = 0;
@@ -11,7 +11,6 @@ let totalImages = 0;
 
 function imageLoaded() {
     imagesLoaded ++;
-    console.log('loaded: ' + imagesLoaded + ' images');
     if(imagesLoaded === totalImages){
         canFetchMorePhotos = true;
         imagesLoaded = 0;
